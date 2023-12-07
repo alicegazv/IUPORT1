@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IUPORT</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Alice Alves"/>
+		<meta name="keywords" content="saude,consulta,online,formulario,agendar"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="profissionais da area da saude e suas especialidades"/>
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+	</head>
+
+	<link rel="icon" type="img/logo-navegador.png" href="img/logo-navegador.png">
+
+	<body class="form-anamnese">
+		<nav>
+			<img class="img-logonav" src="img/logo-nav.png">
+			<div>
+				<a class="a-menu" href="index.html">HOME</a>
+				<a class="a-menu" href="agendamento.html">AGENDAR CONSULTA</a>
+				<a class="a-menu" href="index.html#pag-profissional">PROFISSIONAL</a>
+				<a class="a-menu" href="index.html#pag-contato">CONTATO</a>
+				<a class="a-menu" href="index.html#pag-preco">PREÇOS</a>
+				<a class="a-menu" href="index.html#pag-sobrenos">SOBRE NÓS</a>
+			</div>
+		</nav>
+		<header>
+			<img src="img/banner.png" alt="banner com imagens de uma personagem com um jaleco branco e um estetoscopio espendurado no pescoço, na imagem contem uma frase, a logo da empresa, site da empresa, contato e a especialidade disponivel de fonoaudiologia.">
+		</header>
+
+
+		<section id="pag-anamnese">
+			<form>
+				<div class="card-anamnese">
+					<div class="txt-anamnese">
+						<h1>FICHA DE ANAMNESE</h1>
+					</div>
+				<div class="anamnese-saudG">
+					<label for="nome">Nome:</label><br/>
+					<input id="nome" type="text" name="nome_completo" size="80" placeholder="Digite seu nome completo" required autofocus /><br/>
+				</div>
+
+					<div class="anamnese-Data-Nascimento">
+						<div id="anamnese-data">
+							<div>
+								<label for="data">Data de Nascimento:</label>
+							</div>
+							<input id="data" type="date" name="data" />
+					    </div>
+					    <div id="anamnese-idade">
+					    	<div>
+								<label for="idade">Idade:</label>
+							</div>
+							<input id="idade" type="number" name="idade" min="1" max="200" step="1" /> <br/>
+						</div>
+					</div>
+
+				<div class="anamnese-saudG">
+					<div class="espaço-anmnese">
+						<label for="endereco">Endereço:</label><br/>
+						<input id="endereco" type="text" name="endereco" size="80"/><br/>
+					</div>
+				</div>
+				
+				<div class="anamnese-telefone-genero">
+						<div id="anamnese-telefone">
+							<label for="celular">Telefone:</label><br/>
+							<input id="celular" type="tel" name="celular" size="80" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"><br/> <br/>
+						</div>
+
+					<div id="anamnese-genero">
+						<label for="genero">Gênero:</label>
+						<select id="genero" name="genero">
+							<option value="">Selecione</option>
+							<option value="feminino">Feminino</option>
+							<option value="masculino">Masculino</option>
+						</select>
+					</div>
+				</div>
+
+				<label for="msg">Queixa(s):</label><br/>
+				<textarea id="msg" size="400" rows="4">
+				</textarea>
+
+				<div class="anamnese-saudG">
+					<label for="encaminhado">Encaminhado por:</label><br/>
+					<input id="encaminhado" type="text" name="encaminhado" siz="400"/><br/>
+				</div>
+
+				<div id="txt-saudeG">
+					<h2>SAÚDE GERAL</h2>
+				</div>
+
+				<div class="anamnese-saudG">
+					<div class="espaço-anmnese">
+						<label class="anamnese" for="doenças">Doenças:</label><br/>
+						<input id="doenças" type="text" name="doenças" size="400"/><br/>
+					</div>
+					<div class="espaço-anmnese">
+						<label for="alergia">Alergias:</label><br/>
+						<input id="alergia" type="text" name="alergia" size="400"/><br/>
+					</div>
+					<div class="espaço-anmnese">
+						<label for="medicamentos">Uso de Medicações (quais/Motivo):</label><br/>
+						<input id="medicamentos" type="text" name="medicamentos" size="400"/><br/>
+					</div>
+				</div>
+
+				<fieldset id="sono-anamnese">
+   					 <legend>Sono:</legend>
+    
+					    <div>
+					        <input id="Agitado" type="radio" name="Sono" value="Agitado" />
+					        <label for="Agitado">Agitado</label>
+					    </div>
+
+					    <div>
+					        <input id="Tranquilo" type="radio" name="Sono" value="Tranquilo" />
+					        <label for="Tranquilo">Tranquilo</label>
+					    </div>
+
+					    <div>
+					        <input id="Ronca" type="radio" name="Sono" value="Ronca" />
+					        <label for="Ronca">Ronca</label>
+					    </div>
+
+					    <div>
+					        <input id="EnureseNoturna" type="radio" name="Sono" value="EnureseNoturna" />
+					        <label for="EnureseNoturna">Enurese Noturna</label>
+					    </div>
+				   
+					</fieldset>
+
+				<fieldset class="FichaAnamnese-HD">
+				    <legend>Hábitos Deletérios:</legend>
+				    <div>
+				        <label for="Onicofagia"><input id="Onicofagia" type="checkbox" name="HD" value="Onicofagia" /> Onicofagia</label><br/>
+				    </div>
+				    <div>
+				        <label for="Sucção "><input id="Sucção " type="checkbox" name="HD" value="Sucção " />  Sucção digital e/ou labial, lingual</label><br/>
+				    </div>
+				    <div>
+				        <label for="Bruxismo"><input id="Bruxismo" type="checkbox" name="HD" value="Bruxismo" /> Bruxismo</label><br/>
+				    </div>
+				    <div>
+				        <label for="AD"><input id="AD" type="checkbox" name="HD" value="AD" /> Apertamento dentário</label><br/>
+				    </div>
+				    <div>
+				        <label for="morder"><input id="morder" type="checkbox" name="HD" value="morder" /> Morder mucosa e/ou objetos</label><br/>
+				    </div>
+				</fieldset>
+
+				<div class="botoes-form-anamnese">
+					<div>
+						<input type="submit" name="bnt-agendar" value="ENVIAR" />
+					</div>
+					<div>
+						<input type="reset" name="btn-cancelar" value="CANCELAR" />
+					</div>
+				</div>
+
+				</div>
+			</form>
+		</section>
+
+		<footer id="pag-contato">
+			<a id="bt-topo" href="#"><img id="img-home" src="img/home.png" alt="home">
+			</a>
+			
+			<img class="img-logorodape" src="img/logo-rodape.png">
+
+			<div class="container-imagens">
+				<a href="http://instagram.com" target="_blank">
+					<img class="img-icones" src="img/logo-insta.png" />
+				</a>	
+				<a href="http://instagram.com" target="_blank">
+					<p><b>@IUport</b></p></a>
+				<a href="mailto:IuPort@gmail.com">
+						<img class="img-icones" src="img/logo-email.png" />
+					</a>
+				<a href="mailto:IuPort@gmail.com">
+					<p><b>IuPort@gmail.com</b></p>	
+				</a>
+			</div>
+							
+			<p><b>Desenvolvido por <a href="https://www.instagram.com/" target="_blank"><b>Alice Alves/ Hudson/ Alice Gomes</b></a> - 2023 &copy;</p>
+		</footer>
+	</body>
+</html>

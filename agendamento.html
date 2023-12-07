@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IUPORT</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Alice Alves"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="saude,consulta,online,formulario,agendar"/>
+		<meta name="description" content="profissionais da area da saude e suas especialidades"/>
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+	</head>
+
+	<link rel="icon" type="img/logo-navegador.png" href="img/logo-navegador.png">
+	
+	<body class="form-agendamento">
+		<nav>
+			<img class="img-logonav" src="img/logo-nav.png">
+			<div>
+				<a class="a-menu" href="index.html">HOME</a>
+				<a class="a-menu" href="#">AGENDAR CONSULTA</a>
+				<a class="a-menu" href="index.html#pag-profissional">PROFISSIONAL</a>
+				<a class="a-menu" href="index.html#pag-contato">CONTATO</a>
+				<a class="a-menu" href="index.html#pag-preco">PREÇOS</a>
+				<a class="a-menu" href="index.html#pag-sobrenos">SOBRE NÓS</a>
+			</div>
+		</nav>
+		<header>
+			<img src="img/banner.png" alt="banner com imagens de uma personagem com um jaleco branco e um estetoscopio espendurado no pescoço, na imagem contem uma frase, a logo da empresa, site da empresa, contato e a especialidade disponivel de fonoaudiologia.">
+		</header>
+
+		<section id="pag-agendar">
+			<form>
+				<div class="card-agendar">
+					<div class="txt-agendamento">
+						<h1>AGENDAR CONSULTA</h1>
+						<p>As respostas as questões abaixo serão utilizadas para personalizar seu atendimento. É fundamental que todos os campos sejam preenchidos corretamente.
+						</p>
+					</div>
+
+				<label for="email">E-mail:</label>
+				<input id="email" type="email" name="email" placeholder="nomeusuario@email.com" />
+
+				<div id="data-hora">
+					<div>
+						<label for="data">Data:</label>
+						<input id="data" type="date" name="data" />
+					</div>
+					<div>
+						<label for="hora">Hora:</label>
+						<input id="hora" type="time" name="hora" />
+					</div>
+				</div>
+				
+				<div id="agendamento-convenio">	
+				<label for="convenio">Convênio médico:</label>
+				<select id="convenio" name="convenio">
+					<option value="">Selecione</option>
+					<option value="Bradesco">Bradesco</option>
+					<option value="Amil">Amil</option>
+					<option value="SulAmérica">SulAmérica</option>
+					<option value="UniMed">UniMed</option>
+				</select><br/>
+				</div>
+
+
+				<fieldset>
+					<legend>Modalidade:</legend>
+					<input id="pres" type="radio" name="modalidade" value="pres" /> <label for="pres">Presencial</label><br/>
+					<input id="on" type="radio" name="modalidade" value="on" /> <label for="on">On-line</label>
+				</fieldset>
+
+				<div id="agendamento-quantidade">
+					<label for="aulas">Quantidade:</label>
+					<input id="quantidade" type="number" name="quantidade" min="1" max="10" step="1" />
+				</div>
+
+				<p id="agendamento-primeiraS-N">É sua primeira consulta com este especialista?*</p>
+
+				<input id="sim" type="radio" name="S_N" value="sim" /> <label for="sim">Sim</label><br/>
+				<input id="nao" type="radio" name="S_N" value="nao" /> <label for="nao">Não</label>
+
+				<h2 id="txt-forma-pagamento">FORMA DE PAGAMENTO</h2>
+
+				<fieldset id="agendamento-pagamento">
+   					 <legend>Pagamento:</legend>
+    
+					    <div>
+					        <input id="tb" type="radio" name="Pagamento" value="tb" />
+					        <label for="tb">Transferência Bancária</label>
+					    </div>
+
+					    <div>
+					        <input id="d" type="radio" name="Pagamento" value="d" />
+					        <label for="d">Dinheiro</label>
+					    </div>
+
+					    <div>
+					        <input id="cdc" type="radio" name="Pagamento" value="cdc" />
+					        <label for="cdc">Cartão de Crédito</label>
+					    </div>
+
+					    <div>
+					        <input id="db" type="radio" name="Pagamento" value="db" />
+					        <label for="db">Depósito Bancário</label>
+					    </div>
+
+					    <div>
+					        <input id="px" type="radio" name="Pagamento" value="px" />
+					        <label for="px">Pix</label>
+					    </div>
+
+					    <div>
+					        <input id="cdd" type="radio" name="Pagamento" value="cdd" />
+					        <label for="cdd">Cartão de Débito</label>
+				    </div>
+				</fieldset>
+
+
+				<div id="botoes-form">
+					<div id="bt-continuar">
+						<a href="anamnese.html#pag-anamnese">
+	    					<button type="button" class="BTcontinuar">CONTINUAR ></button>
+	    				</a>
+    				</div>
+
+				</div>
+				</div>
+			</form>
+		</section>
+
+		<footer id="pag-contato">
+			<a id="bt-topo" href="#"><img id="img-home" src="img/home.png" alt="home">
+			</a>
+			
+			<img class="img-logorodape" src="img/logo-rodape.png">
+
+			<div class="container-imagens">
+				<a href="http://instagram.com" target="_blank">
+					<img class="img-icones" src="img/logo-insta.png" />
+				</a>	
+				<a href="http://instagram.com" target="_blank">
+					<p><b>@IUport</b></p></a>
+				<a href="mailto:IuPort@gmail.com">
+						<img class="img-icones" src="img/logo-email.png" />
+					</a>
+				<a href="mailto:IuPort@gmail.com">
+					<p><b>IuPort@gmail.com</b></p>	
+				</a>
+			</div>
+							
+			<p><b>Desenvolvido por <a href="https://www.instagram.com/" target="_blank"><b>Alice Alves/ Hudson/ Alice Gomes</b></a> - 2023 &copy;</p>
+		</footer>
+	</body>
+</html>

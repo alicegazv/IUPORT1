@@ -1,0 +1,941 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&family=Inter:wght@800&family=Roboto&family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+
+*{margin: 0; padding: 0}
+
+body{
+	background-color: #EDFFFF;
+}
+
+nav{
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #F2F5F7;
+    position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+header, img{
+	width: 100%;
+	height: auto;
+}
+
+.img-logonav {
+	width: 90px; 
+    height: auto; 
+    float: left;
+    display: flex;
+}
+
+a{  
+	font:1.0rem 'Ubuntu', sans-serif;
+	color: #505D68; 
+	text-decoration: none;
+}
+
+.a-menu{
+	margin-right: 40px;  
+}
+
+.a-menu:link, .a-menu:visited{
+	color:#505D68;
+}
+
+.a-menu:hover, .a-menu:active{
+	color: #6ADBD8;
+}
+
+/*Seção convite*/
+
+article{
+	margin: 50px;
+}
+
+article h1{
+	font:1.4rem 'Ubuntu', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-left: 300px;
+	padding-right: 300px;
+}
+
+article p{
+	font:1.2rem'Ubuntu', sans-serif;
+	font-weight:lighter;
+	text-align: center;
+	padding-left: 300px;
+	padding-right: 300px;
+}
+
+#txt-article{
+	padding-top: 20px;
+}
+
+/*Seção apresentação do profissional*/
+
+main{
+	background-color:#FFFFFF;
+	display: flex;
+}
+
+#profissional{
+	background-color:#C9FCFB;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+main h2{
+	font:2rem 'Ubuntu', sans-serif;
+	margin: 20px;
+	padding-left: 40px;
+	padding-top: 20px;
+
+}
+
+#fono{
+	margin: 20px;
+	font-family:'Ubuntu', sans-serif;
+	font-size: 17px;
+}
+
+main p{
+	font:1.2rem 'Inria Serif', serif;
+	margin: 20px;
+	text-align: justify;
+	color: #000;
+	padding-bottom: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.img-luisa{
+	width: 2000px;
+	height: auto;
+	background-color: #C9FCFB;
+}
+
+.foto-luisa{
+	margin-top: 10px;
+}
+
+/*Seção Preço*/
+
+section{
+	margin: 50px;
+}
+
+h3{
+	font:2.3rem 'Ubuntu', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#txt-preco{
+	font: 1.3rem 'Ubuntu', sans-serif;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#caixa-peco{
+	background-color:#4FBDC2;
+	height: 400px;
+	width: auto;
+	border-radius: 10px;
+	box-shadow: 0 8px 10px #CCC ;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+#umaconsulta{
+	text-align: left;
+	padding-top: 60px;
+	
+}
+
+#linha{
+	border-left: 1px solid #D1F4F0;
+	justify-content: space-evenly;
+	margin-top: 40px;
+	height: 305px;
+	margin-left: 50px;
+}
+
+#pacote{
+	text-align: right;
+	padding-top: 60px;
+}
+
+#txt-pacote{
+	font: 1.2rem 'Inter', sans-serif;
+	color: #FFFFFF;
+	font-weight: 800;
+	text-align: left;
+}
+
+#pag-preco h4{
+	font: 2.2rem 'Inter', sans-serif;
+	color: #FFFFFF;
+	font-weight: 800;
+	padding-bottom: 20px;
+	text-align: left;
+}
+
+#pag-preco h5{
+	font: 2.4rem 'Inter', sans-serif;
+	color: #085454;
+	font-weight: 800;
+	text-align: center;
+	padding-top: 50px;
+}
+
+ul{
+	padding-top: 70px;
+}
+
+li{
+	font: 1rem 'Ubuntu', sans-serif;
+}
+
+
+#HOME-botão-agendar{
+	text-align: center;
+	margin: 50px;
+}
+
+.HOME-agendarConsulta{
+	background-color: #00BCD5;
+    border: none;
+    color: #EDFFFF;
+    padding: 20px 37px;
+    text-decoration: none;
+    font-size: 21px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 13px;
+    width: 370px;
+}
+
+.HOME-agendarConsulta:hover{
+	background-color: #16C6C1;
+	animation: botonAnimadoHover 1s;
+}
+
+@keyframes botonAnimadoHover{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*Seção o que é a fono*/
+
+.pag-homem{
+	display: flex;
+	background-color:#FFFFFF;
+	justify-content: space-evenly;
+	margin-bottom: 10px;
+}
+
+.img-homem{
+	width:900px;
+	height: auto;
+	background-color: #C9FCFB;
+}
+
+.foto-homem{
+	margin-top: 10px;
+}
+
+.pag-homem h1{
+	font:2rem 'Ubuntu', sans-serif;
+	color: #000;
+	text-align: center;
+	margin: 30px;
+	padding-left: 300px;
+	padding-right: 300px;
+}
+
+.pag-homem p{
+	font:1.2rem 'Inria Serif', serif;
+	text-align: justify;
+	color: #000000;
+	padding-bottom: 9px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+/*Sobre Nós*/
+
+#pag-sobrenos h5{
+	font: 2rem 'Ubuntu', sans-serif;
+	color: #000;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#pag-sobrenos p{
+	text-align: justify;
+	font: 1.1rem 'Inria Serif', serif;
+	font-weight: bold;
+	padding-left: 250px;
+	padding-right: 250px;
+	margin-bottom: 20px;
+}
+
+/*Contatos e rodapé*/
+
+#bt-topo, #img-home{
+	width: 70px;
+	height: 70px;
+	background-color: #6ADBD8;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	border-radius: 35px;
+}
+
+footer{
+	background-color: #2DB1C2;
+    color: white;
+    padding: 2em;
+	clear: both;
+}
+
+footer p{
+	text-align: center;
+	font: 1.2rem 'Roboto', sans-serif;
+	color: #FFFFFF;
+}
+
+footer a{
+	color: #000;
+	font: 1.2rem 'Roboto', sans-serif;
+}
+
+ .container-imagens{
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	margin-bottom: 20px;
+ }
+
+ .container-imagens p{
+ 	color: #000;
+ 	font: 1.2rem 'Roboto', sans-serif;
+ 	margin-left: 5px;
+ }
+
+ .img-icones{
+ 	width: 21px;
+ 	height: 23px;
+ 	margin-left: 40px;
+ }
+
+.img-logorodape{
+	width: 100px; 
+    height: auto; 
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+    float: left;
+}
+
+/*Página de AGENDAMENTO*/
+
+.form-agendamento section form{
+	width: 550px;
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+
+.card-agendar{
+	padding: 40px;
+	background-color: #FFF;
+	margin-bottom: 10px;
+	border-radius: 8px; 
+	box-shadow: 0 4px 8px #CCC;
+}
+
+.txt-agendamento h1{
+	font: 1.8rem 'Inter', sem serifa;
+	color: #16C6C1;
+	text-align: center;
+}
+
+.txt-agendamento p{
+	font: 1.2rem 'Roboto', sans-serif;
+	color: #777777;
+	text-align: center;
+	margin: 20px;
+
+}
+
+/*página campos de agendamento*/
+
+
+#txt-agendamentos p{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form-agendamento input, select, textarea{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #C4C4C4;
+	color: #777;
+}
+
+.form-agendamento label, fieldset, input, select, textarea{
+	font: 1rem 'Roboto', sans-serif;
+}
+
+.form-agendamento fieldset{
+	border: 1px solid #CCC;
+	padding:13px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#data-hora{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4px;
+	margin-top: 10px;
+
+}
+
+#agendamento-convenio{
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+}
+
+#agendamento-primeiraS-N{
+	text-align: left;
+	font: 1rem 'Roboto', sans-serif;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#agendamento-quantidade{
+	display: flex;
+	margin-top: 30px;
+
+}
+
+#agendamento-quantidade input{
+	margin-left: 10px;
+	margin-right: 60%;
+}
+
+.form-agendamento input[type="radio"]{
+	width: 15px;
+	height: 15px;
+	margin-left: 50px;
+}
+
+.form-agendamento textarea{
+	height: 80px;
+}
+
+#txt-forma-pagamento{
+	font: 1.4rem 'Inter', sem serifa;
+	color: #16C6C1;
+	text-align: center;
+	margin: 35px;
+	font-weight: bold;
+}
+
+#agendamento-pagamento legend{
+	font-weight: bold;
+}
+
+#agendamento-pagamento {
+        display: flex;
+        flex-direction: column; 
+    }
+
+#botoes-form{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 50px;
+}
+
+.BTcontinuar{
+	background-color: #01D0EB;
+    border: none;
+    color: #085454;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    width: auto;
+    text-align: center;
+    padding-left: 80px;
+	padding-right: 80px;
+}
+
+/*Ficha Anamnese*/
+
+.txt-anamnese h1{
+	font: 1.8rem 'Inter', sem serifa;
+	color: #16C6C1;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#txt-saudeG h2{
+	font: 1.4rem 'Roboto', sans-serif;
+	color: #16C6C1;
+	font-weight: bold;
+	text-align: center;
+	margin: 30px;
+}
+
+.anamnese-Data-Nascimento {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#anamnese-idade input{
+	padding-right: 55px;
+	padding-left: 40px;
+}
+
+#anamnese-data input{
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.anamnese-telefone-genero{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#anamnese-telefone input{
+	margin-right: 10px;
+	width: 300px;
+	height: 25px;
+}
+
+select, textarea{
+	width: 100%;
+	height: 30px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #C4C4C4;
+	color: #777;
+}
+
+.anamnese-saudG input{
+	width: 550px;
+	height: 30px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #C4C4C4;
+	color: #777;
+}
+
+.espaço-anmnese{
+	margin-bottom: 10px;
+}
+
+section form{
+	width: 550px;
+	margin: 0 auto;
+}
+
+label, fieldset, input, select, textarea{
+	font: 1rem 'Roboto', sans-serif;
+}
+
+fieldset{
+	border: 1px solid #CCC;
+	padding:13px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#pag-anamnese{
+	padding: 40px;
+	background-color: #FFF;
+	border-radius: 8px; 
+	box-shadow: 0 4px 8px #CCC;
+	width: 550px;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.botoes-form-anamnese{
+	display: flex;
+	justify-content: space-between;
+}
+
+.botoes-form-anamnese input[type="submit"], input[type="reset"]{
+	margin: 20px;
+	background-color: #6ADBD8;
+	color: #085454;
+	border: 0;
+	border-radius: 5px;
+	font-weight: bold;
+	padding: 10px;
+	padding-left: 80px;
+	padding-right: 80px
+
+}
+
+.botoes-form-anamnese input[type="reset"]{
+	background-color: #FF3333;
+	color: #FFFF;
+}
+
+
+/*MOBILE - Iphone 12 Pro*/
+
+@media screen and (max-width: 390px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-logonav {
+        width: 30%;
+        margin-bottom: 10px;
+    }
+
+    a {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .a-menu {
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    article h1,
+    article p,
+    main h2,
+    main p,
+    h3,
+    #umaconsulta,
+    #linha,
+    #pacote,
+    #txt-pacote,
+    ul,
+    li,
+    .pag-homem h1,
+    .pag-homem p,
+    #pag-sobrenos h5,
+    #pag-sobrenos p,
+    .container-imagens,
+    .container-imagens p,
+    .img-icones,
+    .img-logorodape {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #pag-preco p{
+    	font-size: 1.2em;
+    }
+
+    #pag-preco h4,
+    #pag-preco h5{
+    	font-size: 1em;
+    }
+
+    .conteiner{
+    	display: none;
+    	flex-direction: column;
+    }
+    
+
+    #linha{
+    	width: none;
+    	height: none;
+    	border-left: none;
+		justify-content: none;
+		margin-top: none;
+		height: none;
+		margin-left: none;
+    }
+
+    .pag-homem{
+		justify-content: none;
+		margin-bottom: 10px;
+	}
+
+	.img-homem{
+		width:100%;
+	}
+
+    main {
+        flex-direction: column;
+    }
+
+    #profissional,
+    section {
+        padding: 10px;
+    }
+
+    #profissional h2 {
+        padding-left: 10px;
+    }
+
+    .img-luisa {
+        width: 100%;
+    }
+
+    #HOME-botão-agendar{
+	margin: 10px;
+	}
+
+	.HOME-agendarConsulta{
+    padding: 12px;
+    font-size: 13px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+	footer .container-imagens{
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	header,img{
+		width: 100%;
+	}
+
+	 #caixa-peco {
+	    flex-direction: column;
+	    padding-bottom: 159px;
+	    padding-top: 90px;
+       
+    }
+
+    .conteiner {
+        display: flex;
+    }
+
+    #umaconsulta h4{
+       text-align: center;
+       font-size: 1.3em;
+    }
+
+    li{
+    	margin-left: 20px;
+    	text-align: left;
+    }
+
+    #pacote h4, #txt-pacote{
+    	text-align: center;
+    	font-size: 1.3em;
+    }
+
+    #linha {
+        width: none;
+        border-left: none;
+        margin-top: none;
+        height: none;
+    }
+
+    main h2{
+		padding-left: 40px;
+		padding-top: 20px;
+
+	}
+
+	main p{
+		padding-left: 45px;
+    	padding-right: 45px;
+	}
+
+    .pag-homem h1{
+		font:1.5rem 'Ubuntu', sans-serif;
+	}
+
+	.pag-homem p{
+		font:1.3rem 'Inria Serif', serif;
+	}
+
+	.pag-homem{
+		padding-left: 40px;
+	    padding-right: 40px;
+	}
+
+	#bt-topo{
+        height: 50px;
+    }
+
+    footer, .img-logorodape, .container-imagens{
+    	text-align: center;
+    	flex-direction: column;
+    	display: flex;
+    	align-items: center;
+    }
+
+    footer #txt-desenvolvedores{
+    	padding-bottom: 70px;
+    	margin-left: 20px;
+    	margin-right: 20px;
+    }
+
+    /*Agendamento*/
+
+    .form-agendamento section form {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card-agendar {
+        padding: 20px;
+    }
+
+    .txt-agendamento h1 {
+        font-size: 1.5rem;
+    }
+
+    .txt-agendamento p {
+        font-size: 1rem;
+        margin: 10px;
+    }
+
+    #botoes-form {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .BTcontinuar {
+        padding: 10px;
+    }
+
+    #agendamento-quantidade input{
+	margin-right: 30%;
+	}
+	
+
+    /*Anamnese - Mobile*/
+
+    .txt-anamnese h1{
+	font-size: ;: 0.5rem;
+	margin-bottom: 30px;
+	}
+
+	#txt-saudeG h2{
+		font: 0.4rem;
+		margin: 10px;
+		text-align: center;
+	}
+
+	.anamnese-Data-Nascimento{
+		flex-direction: column;
+		margin-top: 10px;
+	}
+
+	#anamnese-idade input{
+		border-radius: 5px;
+	}
+
+	#anamnese-data input{
+		border-radius: 5px;
+	}
+
+	.anamnese-telefone-genero{
+		flex-direction: column;
+	}
+
+	#anamnese-telefone input{
+		margin-right: 10px;
+		width: 250px;
+		border-radius: 5px;
+	}
+
+	.form-anamnese select, textarea{
+		width: 250px;
+		height: 40px;
+		padding-left: 5px;
+	}
+
+	.anamnese-saudG input{
+		width: 250px;
+		height: 30px;
+		padding-left: 5px;
+	}
+
+	.anamnese-saudG{
+		width: 200px;
+	}
+
+	.espaço-anmnese{
+		margin-bottom: 10px;
+	}
+
+	.form-anamnese section form{
+		width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;;
+
+	}
+
+	.form-anamnese fieldset{
+		padding:13px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	#pag-anamnese{
+		padding: none;
+		width: 250px;
+		margin: 0 auto;
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	.botoes-form-anamnese{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.botoes-form-anamnese input[type="submit"], input[type="reset"]{
+		margin: 20px;
+		padding: 10px;
+		padding-left: 9px;
+		padding-right: 9px
+
+	}
+
+}
+
+
+
